@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Senior Fullstack Developer (Node.js/React) - TechCorp Solutions | CareerLink</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#f0f3ff",
+                      "surface-container-high": "#e2e8f8",
+                      "tertiary": "#006c4a",
+                      "outline-variant": "#bbcabf",
+                      "inverse-on-surface": "#ebf1ff",
+                      "surface-dim": "#d3daea",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-highest": "#dce2f3",
+                      "outline": "#6c7a71",
+                      "on-secondary-container": "#606365",
+                      "on-secondary-fixed-variant": "#444749",
+                      "on-background": "#151c27",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f9f9ff",
+                      "on-tertiary-fixed": "#002114",
+                      "on-surface": "#151c27",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#00422b",
+                      "on-surface-variant": "#3c4a42",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#4edea3",
+                      "primary-container": "#10b981",
+                      "on-tertiary-fixed-variant": "#005137",
+                      "background": "#f9f9ff",
+                      "secondary-container": "#dee0e2",
+                      "on-secondary-fixed": "#191c1e",
+                      "tertiary-fixed": "#85f8c4",
+                      "secondary-fixed-dim": "#c5c6c8",
+                      "surface-variant": "#dce2f3",
+                      "on-tertiary-container": "#00422c",
+                      "on-primary-fixed-variant": "#005236",
+                      "tertiary-fixed-dim": "#68dba9",
+                      "on-error": "#ffffff",
+                      "secondary": "#5c5f60",
+                      "inverse-surface": "#2a313d",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "surface": "#f9f9ff",
+                      "tertiary-container": "#3eb686",
+                      "primary-fixed": "#6ffbbe",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-tint": "#006c49",
+                      "secondary-fixed": "#e1e2e4",
+                      "primary-fixed-dim": "#4edea3",
+                      "surface-container": "#e7eefe",
+                      "primary": "#006c49",
+                      "on-primary-fixed": "#002113"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "gutter": "20px",
+                      "margin-mobile": "16px",
+                      "container-max": "1200px",
+                      "xl": "40px",
+                      "base": "4px",
+                      "lg": "24px",
+                      "md": "16px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 w-full flex items-center justify-between px-margin-mobile md:px-xl h-16 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline">
+<div class="flex items-center gap-lg">
+<a class="text-headline-lg font-headline-lg font-black text-primary dark:text-primary-fixed" href="#">CareerLink</a>
+<div class="hidden md:flex items-center gap-md">
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all" href="#">Jobs</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all" href="#">CV</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all" href="#">Companies</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="hidden md:block font-label-md text-label-md text-secondary hover:text-primary transition-colors">Login</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-md py-sm rounded-lg hover:opacity-80 transition-opacity">Post a Job</button>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-xl py-lg">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex text-body-sm font-body-sm text-secondary mb-lg">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="hover:text-primary transition-colors" href="#">Trang chủ</a>
+</li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] mx-1" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Việc làm IT</a>
+</div>
+</li>
+<li aria-current="page">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] mx-1" data-icon="chevron_right">chevron_right</span>
+<span class="text-on-surface">Senior Fullstack Developer (Node.js/React)</span>
+</div>
+</li>
+</ol>
+</nav>
+<div class="flex flex-col lg:flex-row gap-gutter">
+<!-- Left Column: Content -->
+<div class="w-full lg:w-[70%] flex flex-col gap-lg">
+<!-- Job Header -->
+<div class="bg-surface border border-outline-variant rounded-xl p-lg">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-sm">Senior Fullstack Developer (Node.js/React)</h1>
+<a class="text-primary hover:underline font-body-lg text-body-lg block mb-md" href="#">TechCorp Solutions Viet Nam</a>
+<div class="flex flex-wrap gap-sm">
+<span class="inline-flex items-center px-sm py-xs rounded bg-surface-container-low text-secondary font-label-sm text-label-sm border border-outline-variant">
+<span class="material-symbols-outlined text-[14px] mr-1" data-icon="schedule">schedule</span>
+                            Full-time
+                        </span>
+<span class="inline-flex items-center px-sm py-xs rounded bg-surface-container-low text-secondary font-label-sm text-label-sm border border-outline-variant">
+<span class="material-symbols-outlined text-[14px] mr-1" data-icon="public">public</span>
+                            Remote
+                        </span>
+<span class="inline-flex items-center px-sm py-xs rounded bg-error-container text-on-error-container font-label-sm text-label-sm border border-error-container">
+<span class="material-symbols-outlined text-[14px] mr-1" data-icon="local_fire_department">local_fire_department</span>
+                            Hot
+                        </span>
+</div>
+</div>
+<!-- Job Description Content -->
+<div class="bg-surface border border-outline-variant rounded-xl p-lg prose prose-emerald max-w-none prose-p:leading-relaxed prose-li:leading-relaxed text-on-surface font-body-md text-body-md">
+<h2 class="font-headline-md text-headline-md mb-md text-on-surface">Mô tả công việc</h2>
+<ul>
+<li>Tham gia thiết kế, phát triển và bảo trì các ứng dụng web phức tạp sử dụng Node.js và React.</li>
+<li>Làm việc chặt chẽ với đội ngũ Product và Design để hiện thực hóa các tính năng mới, đảm bảo trải nghiệm người dùng tối ưu.</li>
+<li>Viết code sạch, dễ bảo trì, có khả năng mở rộng cao và tuân thủ các best practices về security.</li>
+<li>Thực hiện code review, viết unit tests và integration tests để đảm bảo chất lượng phần mềm.</li>
+<li>Tối ưu hóa hiệu suất ứng dụng, xử lý các vấn đề về bottleneck và database queries.</li>
+<li>Tham gia vào quá trình thiết kế hệ thống (System Architecture) cho các dự án mới.</li>
+</ul>
+<h2 class="font-headline-md text-headline-md mt-lg mb-md text-on-surface">Yêu cầu ứng viên</h2>
+<ul>
+<li>Ít nhất 3 năm kinh nghiệm làm việc thực tế với <strong>Node.js</strong> và các framework như Express hoặc NestJS.</li>
+<li>Kinh nghiệm sâu rộng với <strong>ReactJS</strong>, Redux/Context API, và Hooks. Hiểu biết về SSR (Next.js) là một lợi thế lớn.</li>
+<li>Kinh nghiệm làm việc với cơ sở dữ liệu quan hệ (PostgreSQL, MySQL) và NoSQL (MongoDB, Redis). Khả năng tối ưu hóa query tốt.</li>
+<li>Kiến thức vững chắc về RESTful APIs, GraphQL, và Microservices architecture.</li>
+<li>Trải nghiệm thực tế với các dịch vụ Cloud như <strong>AWS</strong> (EC2, S3, RDS, Lambda) hoặc Google Cloud.</li>
+<li>Kinh nghiệm với Docker, CI/CD pipelines (GitHub Actions, Jenkins).</li>
+<li>Kỹ năng giải quyết vấn đề tốt, tư duy logic và khả năng làm việc nhóm hiệu quả.</li>
+<li>Tiếng Anh giao tiếp tốt, có khả năng đọc hiểu tài liệu chuyên ngành.</li>
+</ul>
+<h2 class="font-headline-md text-headline-md mt-lg mb-md text-on-surface">Quyền lợi</h2>
+<ul class="list-none pl-0 space-y-sm">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-2 mt-0.5" data-icon="health_and_safety" data-weight="fill">health_and_safety</span>
+<span>Bảo hiểm sức khỏe cao cấp cho nhân viên và người thân.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-2 mt-0.5" data-icon="laptop_mac" data-weight="fill">laptop_mac</span>
+<span>Cung cấp Macbook Pro M2 hoặc thiết bị tương đương phục vụ công việc.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-2 mt-0.5" data-icon="payments" data-weight="fill">payments</span>
+<span>Thưởng tháng 13, thưởng hiệu quả công việc (Performance Bonus) lên đến 2 tháng lương.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-2 mt-0.5" data-icon="restaurant" data-weight="fill">restaurant</span>
+<span>Trợ cấp ăn trưa, gửi xe miễn phí, pantry ngập tràn đồ ăn nhẹ.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-2 mt-0.5" data-icon="school" data-weight="fill">school</span>
+<span>Ngân sách đào tạo cá nhân hàng năm (Personal Learning Budget).</span>
+</li>
+</ul>
+</div>
+<!-- Company Info -->
+<div class="bg-surface border border-outline-variant rounded-xl p-lg flex flex-col sm:flex-row gap-lg items-start">
+<div class="w-24 h-24 rounded-lg bg-surface-container-low border border-outline-variant flex-shrink-0 overflow-hidden flex items-center justify-center">
+<div class="w-full h-full bg-gradient-to-br from-tertiary-container to-primary flex items-center justify-center text-on-primary font-headline-lg font-bold">TC</div>
+</div>
+<div class="flex-1">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-xs">TechCorp Solutions Viet Nam</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-md">Product Company - TechCorp là công ty công nghệ đa quốc gia chuyên cung cấp các giải pháp phần mềm cho ngành tài chính và bán lẻ. Chúng tôi đang xây dựng một môi trường làm việc cởi mở, sáng tạo và đề cao năng lực cá nhân.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-sm mb-lg">
+<div class="flex items-center font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[18px] mr-2" data-icon="group">group</span>
+                                100 - 499 nhân viên
+                            </div>
+<div class="flex items-center font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[18px] mr-2" data-icon="location_on">location_on</span>
+                                Quận 1, TP. Hồ Chí Minh
+                            </div>
+</div>
+<a class="inline-flex items-center justify-center bg-white border border-outline-variant text-on-surface font-label-md text-label-md px-md py-sm rounded-lg hover:bg-surface-container-low transition-colors" href="#">
+                            Xem trang công ty
+                        </a>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Action Box -->
+<div class="w-full lg:w-[30%]">
+<div class="sticky top-20 bg-surface border border-outline-variant rounded-xl p-lg shadow-sm">
+<div class="mb-lg pb-md border-b border-outline-variant">
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-xs">Mức lương</p>
+<p class="text-2xl font-bold text-primary-container">$2000 - $3500</p>
+</div>
+<div class="space-y-md mb-lg">
+<div class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-0.5" data-icon="location_city">location_city</span>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Địa điểm</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">Hồ Chí Minh (Hybrid)</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-0.5" data-icon="work_history">work_history</span>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Kinh nghiệm</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">3 - 5 năm</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-0.5" data-icon="stars">stars</span>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Cấp bậc</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">Senior</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-0.5" data-icon="event_available">event_available</span>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Hạn nộp hồ sơ</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">30/12/2024</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-sm mb-lg">
+<button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-3 rounded-lg font-bold hover:opacity-90 transition-opacity flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined mr-2 text-[20px]" data-icon="send">send</span>
+                            Ứng tuyển ngay
+                        </button>
+<button class="w-full bg-white border border-outline-variant text-on-surface font-label-md text-label-md py-3 rounded-lg font-medium hover:bg-surface-container-low transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined mr-2 text-[20px]" data-icon="bookmark_border">bookmark_border</span>
+                            Lưu tin
+                        </button>
+</div>
+<div class="pt-md border-t border-outline-variant">
+<p class="font-label-sm text-label-sm text-secondary mb-sm text-center">Chia sẻ việc làm này</p>
+<div class="flex justify-center gap-md">
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-secondary transition-colors" title="Share on LinkedIn">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-secondary transition-colors" title="Copy Link">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Similar Jobs -->
+<div class="mt-xl pt-lg border-t border-outline-variant">
+<div class="flex justify-between items-end mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Việc làm tương tự</h2>
+<a class="text-primary hover:underline font-label-md text-label-md" href="#">Xem tất cả</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Job Card 1 -->
+<div class="bg-surface border border-outline-variant rounded-xl p-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded bg-surface-container-low border border-outline-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="code">code</span>
+</div>
+<button class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="bookmark_border">bookmark_border</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-xs line-clamp-2">Backend Developer (Node.js)</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-md">FinTech Global</p>
+<div class="flex flex-wrap gap-xs mb-md">
+<span class="px-2 py-1 bg-surface-container-low rounded text-xs font-medium text-secondary">Hồ Chí Minh</span>
+<span class="px-2 py-1 bg-surface-container-low rounded text-xs font-medium text-secondary">Mid-Senior</span>
+</div>
+<div class="flex justify-between items-center mt-auto pt-md border-t border-outline-variant">
+<span class="font-bold text-primary-container text-body-md">$1500 - $2500</span>
+<span class="text-xs text-secondary">2 ngày trước</span>
+</div>
+</div>
+<!-- Job Card 2 -->
+<div class="bg-surface border border-outline-variant rounded-xl p-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary text-xs font-bold px-2 py-1 rounded-bl-lg">NEW</div>
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded bg-surface-container-low border border-outline-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="terminal">terminal</span>
+</div>
+<button class="text-secondary hover:text-primary transition-colors mt-2">
+<span class="material-symbols-outlined" data-icon="bookmark_border">bookmark_border</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-xs line-clamp-2">React Developer (Remote)</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-md">Outsource Asia</p>
+<div class="flex flex-wrap gap-xs mb-md">
+<span class="px-2 py-1 bg-surface-container-low rounded text-xs font-medium text-secondary">Remote</span>
+<span class="px-2 py-1 bg-surface-container-low rounded text-xs font-medium text-secondary">React</span>
+</div>
+<div class="flex justify-between items-center mt-auto pt-md border-t border-outline-variant">
+<span class="font-bold text-primary-container text-body-md">Up to $2000</span>
+<span class="text-xs text-secondary">Vừa đăng</span>
+</div>
+</div>
+<!-- Job Card 3 -->
+<div class="bg-surface border border-outline-variant rounded-xl p-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer hidden lg:block">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded bg-surface-container-low border border-outline-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="dns">dns</span>
+</div>
+<button class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="bookmark_border">bookmark_border</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-xs line-clamp-2">Fullstack Engineer (Typescript)</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-md">Startup Studio</p>
+<div class="flex flex-wrap gap-xs mb-md">
+<span class="px-2 py-1 bg-surface-container-low rounded text-xs font-medium text-secondary">Hà Nội</span>
+<span class="px-2 py-1 bg-surface-container-low rounded text-xs font-medium text-secondary">Senior</span>
+</div>
+<div class="flex justify-between items-center mt-auto pt-md border-t border-outline-variant">
+<span class="font-bold text-primary-container text-body-md">Thương lượng</span>
+<span class="text-xs text-secondary">1 tuần trước</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high dark:bg-surface-container-highest border-t border-outline-variant dark:border-outline">
+<div class="w-full py-xl px-margin-mobile md:px-xl grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-lg max-w-container-max mx-auto">
+<div class="col-span-2 lg:col-span-2">
+<a class="text-headline-md font-headline-md font-bold text-on-surface dark:text-on-surface mb-md block" href="#">CareerLink</a>
+<p class="font-body-sm text-body-sm text-secondary mb-lg">Connecting top talent with the best opportunities in the tech industry.</p>
+<p class="font-body-sm text-body-sm text-secondary">© 2024 CareerLink Recruitment. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline decoration-primary transition-all duration-200 font-body-sm text-body-sm" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline decoration-primary transition-all duration-200 font-body-sm text-body-sm" href="#">Support</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline decoration-primary transition-all duration-200 font-body-sm text-body-sm" href="#">Regulations</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline decoration-primary transition-all duration-200 font-body-sm text-body-sm" href="#">App Download</a>
+</div>
+</div>
+</footer>
+</body></html>

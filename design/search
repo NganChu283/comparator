@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kết quả tìm kiếm việc làm - CareerLink</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#f9f9ff",
+                      "on-secondary-fixed": "#191c1e",
+                      "tertiary": "#006c4a",
+                      "primary-fixed-dim": "#4edea3",
+                      "on-tertiary-container": "#00422c",
+                      "inverse-on-surface": "#ebf1ff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f9f9ff",
+                      "surface": "#f9f9ff",
+                      "on-background": "#151c27",
+                      "surface-container-high": "#e2e8f8",
+                      "on-primary-fixed-variant": "#005236",
+                      "on-primary-fixed": "#002113",
+                      "on-surface-variant": "#3c4a42",
+                      "surface-container": "#e7eefe",
+                      "primary-fixed": "#6ffbbe",
+                      "secondary": "#5c5f60",
+                      "surface-container-highest": "#dce2f3",
+                      "outline-variant": "#bbcabf",
+                      "tertiary-fixed": "#85f8c4",
+                      "surface-container-low": "#f0f3ff",
+                      "tertiary-fixed-dim": "#68dba9",
+                      "primary-container": "#10b981",
+                      "on-secondary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "on-surface": "#151c27",
+                      "tertiary-container": "#3eb686",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#4edea3",
+                      "surface-variant": "#dce2f3",
+                      "on-tertiary-fixed": "#002114",
+                      "on-primary-container": "#00422b",
+                      "surface-dim": "#d3daea",
+                      "on-error": "#ffffff",
+                      "surface-tint": "#006c49",
+                      "secondary-fixed": "#e1e2e4",
+                      "secondary-container": "#dee0e2",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#444749",
+                      "on-secondary-container": "#606365",
+                      "inverse-surface": "#2a313d",
+                      "secondary-fixed-dim": "#c5c6c8",
+                      "outline": "#6c7a71",
+                      "on-tertiary-fixed-variant": "#005137",
+                      "primary": "#006c49"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "xs": "4px",
+                      "margin-mobile": "16px",
+                      "base": "4px",
+                      "md": "16px",
+                      "lg": "24px",
+                      "container-max": "1200px",
+                      "gutter": "20px",
+                      "xl": "40px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #f9fafe;
+            color: #151c27;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-background text-on-background">
+<!-- TopNavBar Component -->
+<nav class="sticky top-0 z-50 w-full flex items-center justify-between px-margin-mobile md:px-xl h-16 bg-surface border-b border-outline-variant flat no shadows">
+<div class="flex items-center gap-lg">
+<a class="text-headline-lg font-headline-lg font-black text-primary" href="#">CareerLink</a>
+<div class="hidden md:flex items-center gap-md">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Việc làm</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Hồ sơ CV</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Công ty</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="font-label-md text-label-md text-secondary hover:text-primary transition-colors hidden md:block hover:bg-surface-container-low transition-all px-4 py-2 rounded-lg">Đăng nhập</button>
+<button class="font-label-md text-label-md bg-primary-container text-on-primary hover:bg-surface-tint transition-all px-4 py-2 rounded-lg Active: opacity-80 duration-150">Đăng tin tuyển dụng</button>
+</div>
+</nav>
+<!-- Sticky Search Bar -->
+<div class="sticky top-16 z-40 bg-surface border-b border-outline-variant py-md px-margin-mobile md:px-xl shadow-sm">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row gap-sm items-center">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary">search</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-md text-body-md bg-surface-container-lowest" placeholder="Tên công việc, kỹ năng, công ty..." type="text"/>
+</div>
+<div class="flex flex-1 w-full gap-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary">location_on</span>
+<select class="w-full pl-10 pr-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-md text-body-md bg-surface-container-lowest appearance-none">
+<option value="">Tất cả địa điểm</option>
+<option value="hcm">Hồ Chí Minh</option>
+<option value="hn">Hà Nội</option>
+<option value="dn">Đà Nẵng</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-secondary pointer-events-none">expand_more</span>
+</div>
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary">work</span>
+<select class="w-full pl-10 pr-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-md text-body-md bg-surface-container-lowest appearance-none">
+<option value="">Tất cả ngành nghề</option>
+<option value="it">IT - Phần mềm</option>
+<option value="marketing">Marketing</option>
+<option value="finance">Tài chính - Ngân hàng</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-secondary pointer-events-none">expand_more</span>
+</div>
+</div>
+<button class="w-full md:w-auto bg-primary-container text-on-primary font-label-md text-label-md px-lg py-3 rounded-lg hover:bg-surface-tint transition-colors whitespace-nowrap">
+                Tìm kiếm
+            </button>
+</div>
+</div>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-xl py-lg flex flex-col lg:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-1/4 flex-shrink-0">
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-md sticky top-40">
+<div class="flex items-center justify-between border-b border-outline-variant pb-sm mb-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Bộ lọc tìm kiếm</h2>
+<button class="text-primary font-label-sm text-label-sm hover:underline">Xóa bộ lọc</button>
+</div>
+<!-- Filter Group: Mức lương -->
+<div class="mb-lg">
+<h3 class="font-label-md text-label-md text-on-surface mb-sm">Mức lương</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">Dưới 10 triệu</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">10 - 20 triệu</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">Trên 20 triệu</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Kinh nghiệm -->
+<div class="mb-lg">
+<h3 class="font-label-md text-label-md text-on-surface mb-sm">Kinh nghiệm</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">Chưa có kinh nghiệm</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">1 - 3 năm</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">3 - 5 năm</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">Senior/Quản lý</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Hình thức -->
+<div class="mb-lg">
+<h3 class="font-label-md text-label-md text-on-surface mb-sm">Hình thức làm việc</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">Tại văn phòng</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">Làm việc từ xa</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container border-outline-variant group-hover:border-primary transition-colors" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface">Kết hợp</span>
+</label>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-2 rounded-lg hover:bg-surface-tint transition-colors">
+                    Áp dụng
+                </button>
+</div>
+</aside>
+<!-- Job Results -->
+<div class="w-full lg:w-3/4 flex flex-col gap-md">
+<!-- Sorting Bar -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-surface-container-lowest p-sm rounded-xl border border-outline-variant">
+<p class="font-body-md text-body-md text-on-surface-variant mb-2 sm:mb-0 pl-2">
+                    Tìm thấy <span class="font-bold text-on-surface">1.245</span> việc làm phù hợp
+                </p>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-secondary">Sắp xếp theo:</span>
+<select class="border-none bg-surface-container-low rounded-md py-1.5 pl-3 pr-8 font-label-sm text-label-sm text-on-surface focus:ring-0 cursor-pointer appearance-none">
+<option>Liên quan nhất</option>
+<option>Mới cập nhật</option>
+<option>Lương cao nhất</option>
+</select>
+</div>
+</div>
+<!-- Job List -->
+<div class="flex flex-col gap-md">
+<!-- Job Card 1 -->
+<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col sm:flex-row gap-md hover:border-primary hover:shadow-lg transition-all duration-200">
+<div class="w-16 h-16 flex-shrink-0 border border-outline-variant rounded-lg p-1 bg-white flex items-center justify-center">
+<img alt="Company Logo" class="w-full h-full object-contain rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoasbw7nmSlU_3TtVK6cZ7dGIqamweufFk89tISbsMv3y_UR28j2gsBqycIH6Isbq25k_db02fnS97JmlEIB1zNGNO9SupPImfyOZHjagyFjpGmd8MkCG7Ax6xLa-ARiO5EE0lNFItmAlwJu23zQ6v0rAUmYaPbo9GCwdSIyUZp09qkiYHX2wtI25dtZoCdiEp11ordzrX9YpLLHyeh5_NBUjJ-9yzTSpcFvZM5fc_vQrx6Nh8wixf7SoSBP9yBzkSUWDliOS_FW0"/>
+</div>
+<div class="flex-1 flex flex-col gap-sm">
+<div>
+<a class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors block mb-1" href="#">Senior Fullstack Developer (Node.js/React)</a>
+<span class="font-body-md text-body-md text-on-surface-variant">TechCorp Solutions Viet Nam</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1">
+<div class="flex items-center gap-1 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">monetization_on</span>
+                                2000$ - 3500$
+                            </div>
+<div class="flex items-center gap-1 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                                Quận 1, Hồ Chí Minh
+                            </div>
+<div class="flex items-center gap-1 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                                Cập nhật 2 giờ trước
+                            </div>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">Node.js</span>
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">ReactJS</span>
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">PostgreSQL</span>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-start gap-3 mt-4 sm:mt-0 flex-shrink-0">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:bg-surface-tint transition-colors w-full sm:w-auto">
+                            Ứng tuyển ngay
+                        </button>
+<button class="text-outline hover:text-error transition-colors p-2 rounded-full hover:bg-error-container" title="Lưu việc làm">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+</div>
+</div>
+<!-- Job Card 2 -->
+<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col sm:flex-row gap-md hover:border-primary hover:shadow-lg transition-all duration-200">
+<div class="w-16 h-16 flex-shrink-0 border border-outline-variant rounded-lg p-1 bg-white flex items-center justify-center relative">
+<span class="absolute -top-2 -left-2 bg-error text-on-error text-[10px] font-bold px-1.5 py-0.5 rounded-sm">HOT</span>
+<img alt="Company Logo" class="w-full h-full object-contain rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2tUIqvP8ePimI8mg4uZcGehCXkUJe0kgfraegghicJ0sqXGET7KUatnh4uAgOTYYgu-leoKDZzIfG3ZqsvOsY8KufkCKPzVyksYePmKJyiqsElkJgVl4B39FP6Y8JqFD56WviWz5IYfr2UB_JxPdvzR2SSU-C13K9qWR5uf_iLhWynr-lsZLbTzogAYJYAcoELRkicnT9m1KEa60u1xm9eyX5jQ95Lb_8ZTpwdkyuyMKFrOXeHGukIxKt2MSujeUiaVu6MOFXnrI"/>
+</div>
+<div class="flex-1 flex flex-col gap-sm">
+<div>
+<a class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors block mb-1" href="#">Backend Engineer (Spring Boot/Java)</a>
+<span class="font-body-md text-body-md text-on-surface-variant">FinTech Innovations VN</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1">
+<div class="flex items-center gap-1 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">monetization_on</span>
+                                1500$ - 2500$
+                            </div>
+<div class="flex items-center gap-1 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                                Cầu Giấy, Hà Nội
+                            </div>
+<div class="flex items-center gap-1 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                                Cập nhật 1 ngày trước
+                            </div>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">Java</span>
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">Spring Boot</span>
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">Microservices</span>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-start gap-3 mt-4 sm:mt-0 flex-shrink-0">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:bg-surface-tint transition-colors w-full sm:w-auto">
+                            Ứng tuyển ngay
+                        </button>
+<button class="text-outline hover:text-error transition-colors p-2 rounded-full hover:bg-error-container" title="Lưu việc làm">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+</div>
+</div>
+<!-- Job Card 3 -->
+<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col sm:flex-row gap-md hover:border-primary hover:shadow-lg transition-all duration-200">
+<div class="w-16 h-16 flex-shrink-0 border border-outline-variant rounded-lg p-1 bg-white flex items-center justify-center relative">
+<span class="absolute -top-2 -right-2 bg-primary-container text-on-primary text-[10px] font-bold px-1.5 py-0.5 rounded-sm">NEW</span>
+<img alt="Company Logo" class="w-full h-full object-contain rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBurFNlnR2Iq7F0dOYt16p9gQhK9MKiYwmpb1UZ5ISJ_RTbQO07gn8NdWsZeLHSm4PMmord083CfggHfVBJhYyFsk3NEf3noK6pPFLWoY6NhGrTvbtWNiWSwL0CgSRhUymukGkM_GIsRD1eLG7TTZ1xeJXFZCh_Z9P52Imi9xHe_VAy1tp5YquYCixEB3p8YOV3QUPnVz1AJcihWtDqOsgcEFP9V_0oyV0RzP6FzwOjlsw9VAHQVE-KvtoBYK2RUkuB0JRZMe_V0D8"/>
+</div>
+<div class="flex-1 flex flex-col gap-sm">
+<div>
+<a class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors block mb-1" href="#">Product Manager (B2B SaaS)</a>
+<span class="font-body-md text-body-md text-on-surface-variant">Global Logistics Corp</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1">
+<div class="flex items-center gap-1 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">monetization_on</span>
+                                Lên đến 3000$
+                            </div>
+<div class="flex items-center gap-1 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                                Làm việc từ xa
+                            </div>
+<div class="flex items-center gap-1 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                                Vừa đăng
+                            </div>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">Quản lý Sản phẩm</span>
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">Agile</span>
+<span class="bg-surface-container px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant">B2B</span>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-start gap-3 mt-4 sm:mt-0 flex-shrink-0">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:bg-surface-tint transition-colors w-full sm:w-auto">
+                            Ứng tuyển ngay
+                        </button>
+<button class="text-outline hover:text-error transition-colors p-2 rounded-full hover:bg-error-container" title="Lưu việc làm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: #ba1a1a;">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center gap-2 mt-lg">
+<button class="w-10 h-10 rounded-lg border border-outline-variant flex items-center justify-center text-secondary hover:bg-surface-container hover:text-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center">1</button>
+<button class="w-10 h-10 rounded-lg border border-outline-variant flex items-center justify-center text-secondary font-label-md text-label-md hover:bg-surface-container hover:text-primary transition-colors">2</button>
+<button class="w-10 h-10 rounded-lg border border-outline-variant flex items-center justify-center text-secondary font-label-md text-label-md hover:bg-surface-container hover:text-primary transition-colors">3</button>
+<span class="text-secondary font-body-md">...</span>
+<button class="w-10 h-10 rounded-lg border border-outline-variant flex items-center justify-center text-secondary font-label-md text-label-md hover:bg-surface-container hover:text-primary transition-colors">10</button>
+<button class="w-10 h-10 rounded-lg border border-outline-variant flex items-center justify-center text-secondary hover:bg-surface-container hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-xl px-margin-mobile md:px-xl grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-lg max-w-container-max mx-auto bg-surface-container-high border-t border-outline-variant flat no shadows">
+<div class="col-span-2 lg:col-span-1 flex flex-col gap-sm">
+<span class="text-headline-md font-headline-md font-bold text-on-surface">CareerLink</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Tuyển dụng CareerLink. Đã đăng ký bản quyền.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary hover:underline decoration-primary Transition-all duration-200" href="#">Về chúng tôi</a>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary hover:underline decoration-primary Transition-all duration-200" href="#">Hỗ trợ</a>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary hover:underline decoration-primary Transition-all duration-200" href="#">Quy định</a>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary hover:underline decoration-primary Transition-all duration-200" href="#">Tải ứng dụng</a>
+</div>
+</footer>
+</body></html>

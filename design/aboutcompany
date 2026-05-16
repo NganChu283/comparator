@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TechCorp Solutions Viet Nam - Hồ sơ công ty</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#6ffbbe",
+                        "inverse-surface": "#2a313d",
+                        "surface-tint": "#006c49",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#3eb686",
+                        "tertiary": "#006c4a",
+                        "outline": "#6c7a71",
+                        "surface": "#f9f9ff",
+                        "on-primary-fixed": "#002113",
+                        "secondary-fixed-dim": "#c5c6c8",
+                        "tertiary-fixed-dim": "#68dba9",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#e1e2e4",
+                        "on-primary": "#ffffff",
+                        "primary": "#006c49",
+                        "on-tertiary-fixed": "#002114",
+                        "on-tertiary-container": "#00422c",
+                        "surface-container": "#e7eefe",
+                        "background": "#f9f9ff",
+                        "surface-container-highest": "#dce2f3",
+                        "on-tertiary-fixed-variant": "#005137",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#4edea3",
+                        "inverse-on-surface": "#ebf1ff",
+                        "on-secondary-fixed": "#191c1e",
+                        "surface-variant": "#dce2f3",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-secondary-fixed-variant": "#444749",
+                        "on-surface": "#151c27",
+                        "on-secondary-container": "#606365",
+                        "outline-variant": "#bbcabf",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d3daea",
+                        "secondary": "#5c5f60",
+                        "primary-fixed-dim": "#4edea3",
+                        "on-primary-container": "#00422b",
+                        "surface-container-low": "#f0f3ff",
+                        "surface-container-high": "#e2e8f8",
+                        "surface-bright": "#f9f9ff",
+                        "primary-container": "#10b981",
+                        "on-background": "#151c27",
+                        "on-surface-variant": "#3c4a42",
+                        "secondary-container": "#dee0e2",
+                        "tertiary-fixed": "#85f8c4",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "lg": "24px",
+                        "xs": "4px",
+                        "container-max": "1200px",
+                        "sm": "8px",
+                        "gutter": "20px",
+                        "margin-mobile": "16px",
+                        "base": "4px",
+                        "xl": "40px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 w-full flex items-center justify-between px-margin-mobile md:px-xl h-16 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline flat no shadows">
+<div class="flex items-center gap-lg">
+<a class="text-headline-lg font-headline-lg font-black text-primary dark:text-primary-fixed" href="#">CareerLink</a>
+<div class="hidden md:flex items-center gap-md">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all px-3 py-2 rounded-md" href="#">Việc làm</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all px-3 py-2 rounded-md" href="#">Hồ sơ</a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all px-3 py-2" href="#">Công ty</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors">Đăng nhập</button>
+<button class="bg-primary-container text-on-primary rounded-lg px-4 py-2 font-label-md text-label-md hover:opacity-90 transition-opacity">Đăng tin tuyển dụng</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[300px] md:h-[400px] bg-surface-container-high">
+<img alt="Modern IT office setting with employees working collaboratively in a bright, airy space." class="w-full h-full object-cover" data-alt="A bright, modern corporate office environment with large windows letting in natural light. Tech professionals in smart casual attire are collaborating around sleek, contemporary desks. The color palette features whites, light grays, and accents of emerald green. The mood is dynamic, professional, and forward-thinking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrzwT80mmd9-zvgPge5fiWQf_J3KQ_UDS9G2QZDRHkjkYh4klYR3GngNW10qYtSa5e0SIigJSa4bu3Rt1QfcdFKr1EHAjbtZS2puS51z8-IClJ5rOiUr4vw1I6DiS_FLbjInrEjWmlI-d8q9MAV1RnwLvIsoVs8oQA6FDB1YNDDSew1TuMpceJuml9jCqnSxE6qqPJ7eHctSFFwvEF0wWX10bDaHNqsaJPwyr603xZCOp8aaCgYVi_yWHthQYWA7zzPJnpHmbuJVo"/>
+<!-- Company Info Box -->
+<div class="absolute -bottom-16 left-0 right-0 max-w-container-max mx-auto px-margin-mobile md:px-gutter z-10">
+<div class="bg-surface rounded-xl border border-outline-variant p-md md:p-lg flex flex-col md:flex-row items-center md:items-start gap-lg relative">
+<!-- Logo -->
+<div class="w-24 h-24 md:w-32 md:h-32 bg-surface rounded-lg shadow-[0px_4px_12px_rgba(0,0,0,0.05)] border border-outline-variant flex-shrink-0 -mt-12 md:-mt-20 relative z-20 flex items-center justify-center overflow-hidden bg-white">
+<span class="material-symbols-outlined text-[64px] text-primary">domain</span>
+</div>
+<!-- Details -->
+<div class="flex-grow text-center md:text-left">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-xs">TechCorp Solutions Viet Nam</h1>
+<a class="font-body-md text-body-md text-primary hover:underline mb-sm block" href="#">www.techcorp.vn</a>
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-md mt-sm">
+<div class="flex items-center gap-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">computer</span>
+                                IT - Phần mềm
+                            </div>
+<div class="flex items-center gap-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">group</span>
+                                100-499 Nhân viên
+                            </div>
+<div class="flex items-center gap-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                                TP. Hồ Chí Minh
+                            </div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-sm mt-md md:mt-0">
+<button class="bg-primary-container text-on-primary rounded-lg px-6 py-2 font-label-md text-label-md hover:shadow-md transition-all whitespace-nowrap">Theo dõi công ty</button>
+<button class="bg-surface border border-outline-variant text-on-surface rounded-lg px-4 py-2 flex items-center justify-center hover:bg-surface-container-low transition-colors" title="Chia sẻ">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Spacer for absolute positioned box -->
+<div class="h-24 md:h-20 w-full"></div>
+<!-- Sticky In-page Tabs -->
+<div class="sticky top-16 z-40 bg-surface border-b border-outline-variant w-full">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex items-center gap-lg overflow-x-auto no-scrollbar py-sm">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-2 whitespace-nowrap" href="#about">Giới thiệu</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors pb-2 whitespace-nowrap" href="#culture">Môi trường làm việc</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors pb-2 whitespace-nowrap" href="#jobs">Việc làm đang mở</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-xl flex flex-col gap-xl">
+<!-- About Us Section -->
+<section class="scroll-mt-32" id="about">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
+<div class="md:col-span-7 flex flex-col gap-md">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Giới thiệu</h2>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+<p>TechCorp Solutions Việt Nam là một trung tâm phát triển phần mềm hàng đầu chuyên tạo ra các sản phẩm kỹ thuật số sáng tạo. Chúng tôi chuyên về các giải pháp doanh nghiệp, điện toán đám mây và nền tảng dựa trên AI.</p>
+<p>Sứ mệnh của chúng tôi là trao quyền cho các doanh nghiệp thông qua công nghệ, đồng thời nuôi dưỡng một môi trường hợp tác và định hướng phát triển cho nhân tài kỹ thuật của chúng tôi.</p>
+</div>
+</div>
+<div class="md:col-span-5 rounded-xl overflow-hidden border border-outline-variant shadow-sm h-[300px]">
+<img alt="Diverse team of tech professionals smiling" class="w-full h-full object-cover" data-alt="A group of diverse software engineers and designers collaborating around a table in a bright, modern office. They are looking at a laptop screen, smiling and engaged. Soft natural lighting, corporate modern aesthetic with emerald green accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC388jKvq3f_9iqTsXkwT5aeyVu5DkdMN4hFOeRTsLinDtJyaDvlw-oRtgBqiyUG_-TnrRFaFfi7BX7CMKWxd7yow41CXljs8GHTMauwoUS0hlc-MxVN_cnr_I1KjwOz7yKwXg7LKuOyow7V8oVn2-Hd4iAywLHOM7YH8IKx3j4_NIEzLZVmdb7pmnV14J4Z6LrIMgz04C93iuQtzN9EOy1W3CtnBKoDzrjZ6jQhKL1aeSdDS_TTsern7eeWLDdQiuS0pWu35c9yYY"/>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="scroll-mt-32" id="culture">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg">Tại sao chọn chúng tôi</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Benefit Card -->
+<div class="bg-surface rounded-xl border border-outline-variant p-lg hover:shadow-[0px_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-md">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Bảo hiểm cao cấp</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Các gói bảo hiểm sức khỏe toàn diện cho bạn và người phụ thuộc.</p>
+</div>
+<!-- Benefit Card -->
+<div class="bg-surface rounded-xl border border-outline-variant p-lg hover:shadow-[0px_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-md">
+<span class="material-symbols-outlined">devices</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Thiết bị hiện đại</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Được cung cấp MacBook Pro, ghế công thái học và màn hình độ phân giải cao.</p>
+</div>
+<!-- Benefit Card -->
+<div class="bg-surface rounded-xl border border-outline-variant p-lg hover:shadow-[0px_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-md">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Thời gian linh hoạt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tập trung vào kết quả với giờ làm việc linh hoạt và các tùy chọn làm việc từ xa.</p>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg">Đội ngũ của chúng tôi</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-sm md:gap-md auto-rows-[150px] md:auto-rows-[200px]">
+<div class="col-span-2 row-span-2 rounded-xl overflow-hidden bg-surface-container-high relative">
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-tint/20 to-transparent z-10"></div>
+<img alt="Office space" class="w-full h-full object-cover" data-alt="A spacious, high-end corporate office interior with modern furniture, lush green plants, and expansive windows. The lighting is bright and even, highlighting a clean, professional aesthetic with subtle emerald brand colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTasmUha4QjLAJQyAJa-npbcV0o3CM2TvY5nhVkShdU3qRAD3HPpQoD1QNq3v2w_cCGuXvsK5JaO1Z_ID058pvZTl45nQVQQdaBrvtfasiztd4Z6QlIb4dBJryMs_hR_EpRJMnqP9zAyNJ4zE5n5ea3CZoBhj11J9dy217IOw-jv8KpbDXlyfq_mGx1zelm7hXZ-AQBUQs0eGljm3g65ALBbr3tDg1XOB0SxnTBBzEGMDOAEcGYj338P2xBYb5Atq0BVzHi5bphXE"/>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-high">
+<img alt="Team collaborating" class="w-full h-full object-cover" data-alt="Close up of professionals discussing a project over a laptop. High quality corporate photography, modern lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsFG7g0vSwnY5uZavM--p49h0wR8m9wY_YJ8MJyqp3TFUxs4xONOAxE0f6f83JLVbKm2_QUjlkEmzB3C_oBsxlBJtk05M1Itasu5zhxWui4qzMT6YP6AydVhKVpc5KNBe3wI9CEFS3B_0RpoTXv2KFXZ5Cwbctg0CPxKMnJy1tukwIXj1PXVsYNGJzbLGHaJONrZ-PUjzb8NzLmnVj_CyCbR1Bc0KzRBDPYqevnOmI5sogBxsYSffM_HSgGRoJ4KrTJToTCIFFOxg"/>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-high">
+<img alt="Meeting room" class="w-full h-full object-cover" data-alt="A sleek glass-walled meeting room in a modern office. Clean lines, professional atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrsAYd3D3KKWby_dXMQRrElBUAgwz_KkdVSP-UfZcaOvNOl3PA0GpGUL7KXRw5RHmWdjGIy7cvWrGeXU2juyXLO-6L6Ts8Ca8O3qeipdRiM_BesGjDumazmkZssa1la5zxhW6xn84PLTTCD2XIrjW8WQFJp81dVedOLq-xcmUl73XUw_XYOc0ZxJKuZSIREkC9NUIEc5K5DQTVY-ugd29nS5ygodmYsILdM-3Esfhy6pMNQbtHa28I0VGUlagK20Nq9VpefABiLaU"/>
+</div>
+<div class="col-span-2 rounded-xl overflow-hidden bg-surface-container-high">
+<img alt="Company event" class="w-full h-full object-cover" data-alt="A large group of tech employees smiling at a casual company gathering. Vibrant, positive corporate culture vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgCe5iJSJE590ibIMVcbd-aFJWWH6j_nuNQvRbJ1YH_sBLZAjSU6ts7ZNuPy1fmXWbEHE_MblzEBQIMAjz1kMExzSFSH009mqWON39Sxa9itXbZOTdLM_0l_hZmJxC8MukIeLIuiHU33bRk4G4iCwZPLJRqhbfQBcuDr-Z4nhxwyMbVRyGHooT-2ibPmWJPAmteTV7XEBAckYryhFPlV2yxs1ruxopVOcIjDl209atjoIoHTsg3NS0LpmzROLN6az1XJTPNNiZcHo"/>
+</div>
+</div>
+</section>
+<!-- Open Positions -->
+<section class="scroll-mt-32" id="jobs">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-md mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Việc làm đang mở</h2>
+<div class="relative w-full md:w-72">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full h-12 pl-10 pr-4 rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Tìm kiếm vị trí..." type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-md">
+<!-- Job Card 1 -->
+<div class="bg-surface rounded-xl border border-outline-variant p-md hover:shadow-[0px_4px_12px_rgba(0,0,0,0.05)] transition-all group flex flex-col md:flex-row gap-md items-start md:items-center">
+<div class="flex-grow">
+<div class="flex items-center gap-sm mb-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors cursor-pointer">Senior Frontend Engineer (React)</h3>
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded">HOT</span>
+</div>
+<div class="flex flex-wrap items-center gap-4 font-body-sm text-body-sm text-on-surface-variant mt-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> TP. Hồ Chí Minh</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">payments</span> $2000 - $3500</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">work</span> Toàn thời gian</span>
+</div>
+</div>
+<button class="bg-surface border border-outline-variant text-on-surface rounded-lg px-4 py-2 font-label-md text-label-md hover:bg-primary-container hover:text-on-primary hover:border-primary transition-all whitespace-nowrap w-full md:w-auto">Ứng tuyển ngay</button>
+</div>
+<!-- Job Card 2 -->
+<div class="bg-surface rounded-xl border border-outline-variant p-md hover:shadow-[0px_4px_12px_rgba(0,0,0,0.05)] transition-all group flex flex-col md:flex-row gap-md items-start md:items-center">
+<div class="flex-grow">
+<div class="flex items-center gap-sm mb-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors cursor-pointer">Backend Developer (Node.js/AWS)</h3>
+<span class="bg-primary-container/20 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded">MỚI</span>
+</div>
+<div class="flex flex-wrap items-center gap-4 font-body-sm text-body-sm text-on-surface-variant mt-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> TP. Hồ Chí Minh / Hybrid</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">payments</span> Lên đến $3000</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">work</span> Toàn thời gian</span>
+</div>
+</div>
+<button class="bg-surface border border-outline-variant text-on-surface rounded-lg px-4 py-2 font-label-md text-label-md hover:bg-primary-container hover:text-on-primary hover:border-primary transition-all whitespace-nowrap w-full md:w-auto">Ứng tuyển ngay</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl px-margin-mobile md:px-xl grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-lg max-w-container-max mx-auto bg-surface-container-high dark:bg-surface-container-highest border-t border-outline-variant dark:border-outline flat no shadows Transition-all duration-200 mt-auto">
+<div class="col-span-2 lg:col-span-2 flex flex-col gap-md">
+<span class="text-headline-md font-headline-md font-bold text-on-surface dark:text-on-surface">CareerLink</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 CareerLink Recruitment. Tất cả các quyền được bảo lưu.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-surface">Công ty</h4>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline decoration-primary" href="#">Giới thiệu</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline decoration-primary" href="#">Hỗ trợ</a>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-surface">Pháp lý</h4>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline decoration-primary" href="#">Quy định</a>
+</div>
+<div class="flex flex-col gap-sm col-span-2 md:col-span-1">
+<h4 class="font-label-md text-label-md text-on-surface">Tải ứng dụng</h4>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline decoration-primary" href="#">Tải xuống ứng dụng</a>
+</div>
+</footer>
+</body></html>
