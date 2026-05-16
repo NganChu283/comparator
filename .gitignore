@@ -24,6 +24,8 @@
 /storage/*.key
 /storage/pail
 /vendor
+!/compose.yaml
+!/docker-compose.yml
 _ide_helper.php
 Homestead.json
 Homestead.yaml

@@ -12,7 +12,47 @@ Mat khau chung: `password`
 | Ung vien | `candidate@topcv.test` |
 | Nha tuyen dung | `employer@topcv.test` |
 
-## Chay local nhanh
+## Chay bang Docker Compose
+
+Du an da cau hinh Laravel Sail qua `compose.yaml` de co cung moi truong PHP 8.3, MySQL 8.4 va Node trong container.
+
+Lan dau clone ve, cai dependency bang Docker de khong phu thuoc PHP/Composer tren may:
+
+```bash
+cp .env.example .env
+docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/var/www/html" -w /var/www/html laravelsail/php83-composer:latest composer install --ignore-platform-reqs
+./vendor/bin/sail up -d
+./vendor/bin/sail artisan key:generate
+./vendor/bin/sail artisan migrate:fresh --seed
+./vendor/bin/sail artisan storage:link
+```
+
+Neu may da co PHP/Composer dung phien ban, co the thay lenh `docker run ... composer install` bang:
+
+```bash
+composer install
+```
+
+Mo ung dung tai:
+
+```text
+http://localhost:8000
+```
+
+Neu can build asset:
+
+```bash
+./vendor/bin/sail npm install
+./vendor/bin/sail npm run build
+```
+
+Dung container:
+
+```bash
+./vendor/bin/sail down
+```
+
+## Chay local khong Docker
 
 ```bash
 composer install
@@ -22,7 +62,7 @@ php artisan storage:link
 php artisan serve
 ```
 
-Mac hien tai chua co MySQL CLI, nen `.env` dang de SQLite de demo duoc ngay. Neu dung MySQL, tao database roi doi `.env`:
+Neu khong dung Docker, ban can tu cai dung phien ban PHP theo `composer.json` va MySQL. Tao database roi doi `.env`:
 
 ```env
 DB_CONNECTION=mysql
@@ -50,5 +90,5 @@ php artisan migrate:fresh --seed
 ## Kiem tra
 
 ```bash
-php artisan test
+./vendor/bin/sail test
 ```
