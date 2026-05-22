@@ -178,7 +178,7 @@ Quản trị viên là người có quyền cao nhất trong hệ thống, chị
 | UC-GUEST-05 | Xem danh sách công ty |
 | UC-GUEST-06 | Xem chi tiết công ty |
 | UC-GUEST-07 | Đăng ký tài khoản |
-| UC-GUEST-08 | Đăng nhập |
+| UC-GUEST-08 | Đăng nhập 1 |
 
 ---
 
