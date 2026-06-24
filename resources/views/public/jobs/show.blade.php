@@ -1,4 +1,59 @@
 <x-app-layout>
+<div class="container mx-auto px-4 py-8">
+    <div class="max-w-3xl mx-auto">
+        <div class="mb-4">
+            <a href="{{ route('jobs.index') }}" class="text-indigo-600 hover:underline">&larr; Quay lại</a>
+        </div>
+
+        <article class="p-6 border rounded">
+            <h1 class="text-2xl font-semibold">{{ $job->title }}</h1>
+            <div class="text-sm text-gray-600 mt-1">{{ $job->company->name ?? 'Công ty' }} • {{ $job->location }} • {{ $job->category->name ?? '' }}</div>
+
+            <section class="mt-4">
+                <h3 class="font-medium">Mô tả công việc</h3>
+                <div class="prose max-w-none">{!! nl2br(e($job->description)) !!}</div>
+            </section>
+
+            <section class="mt-4">
+                <h3 class="font-medium">Yêu cầu</h3>
+                <div class="text-sm text-gray-700">{!! nl2br(e($job->requirements)) !!}</div>
+            </section>
+
+            <div class="mt-6">
+                @auth
+                    @if(auth()->user()->role === 'candidate')
+                        @if($hasApplied)
+                            <div class="text-green-600 font-medium">Bạn đã ứng tuyển việc làm này.</div>
+                        @else
+                            <form method="POST" action="{{ route('candidate.jobs.apply', $job) }}">
+                                @csrf
+                                <label class="block mb-2 text-sm">Chọn CV</label>
+                                <select name="cv_id" class="border rounded px-3 py-1 w-full md:w-1/2">
+                                    @foreach($candidateCvs as $cv)
+                                        <option value="{{ $cv->id }}">{{ $cv->title }}</option>
+                                    @endforeach
+                                </select>
+                                <button class="mt-3 bg-indigo-600 text-white px-4 py-2 rounded">Ứng tuyển</button>
+                            </form>
+                        @endif
+                    @else
+                        <div class="text-sm text-gray-600">Chỉ ứng viên mới có thể ứng tuyển. <a href="{{ route('login') }}" class="text-indigo-600">Đăng nhập</a> hoặc <a href="{{ route('register') }}" class="text-indigo-600">Đăng ký</a>.</div>
+                    @endif
+                @else
+                    <div class="text-center">
+                        <p class="mb-3">Bạn cần <a href="{{ route('login') }}" class="text-indigo-600">đăng nhập</a> hoặc <a href="{{ route('register') }}" class="text-indigo-600">đăng ký</a> để ứng tuyển.</p>
+                        <div class="flex justify-center gap-3">
+                            <a href="{{ route('login') }}" class="px-4 py-2 border rounded">Đăng nhập</a>
+                            <a href="{{ route('register') }}" class="px-4 py-2 bg-indigo-600 text-white rounded">Đăng ký</a>
+                        </div>
+                    </div>
+                @endauth
+            </div>
+        </article>
+    </div>
+</div>
+</x-app-layout>
+<x-app-layout>
     <nav class="breadcrumbs">
         <a href="{{ route('home') }}">Trang chủ</a>
         <span class="material-symbols-outlined">chevron_right</span>

@@ -1,4 +1,38 @@
 <x-app-layout>
+<div class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+        <a href="{{ route('companies.index') }}" class="text-indigo-600 hover:underline">&larr; Quay lại</a>
+
+        <header class="mt-4 mb-6 flex items-center gap-4">
+            <div class="w-20 h-20 bg-gray-100 rounded overflow-hidden flex items-center justify-center">@if($company->logo)<img src="{{ asset('storage/'.$company->logo) }}" alt="" class="w-full h-full object-cover">@else<span class="material-symbols-outlined">apartment</span>@endif</div>
+            <div>
+                <h1 class="text-2xl font-semibold">{{ $company->name }}</h1>
+                <div class="text-sm text-gray-600">{{ $company->address }}</div>
+            </div>
+        </header>
+
+        <section class="mb-6">
+            <h3 class="font-medium">Giới thiệu</h3>
+            <div class="text-sm text-gray-700">{{ $company->description }}</div>
+        </section>
+
+        <section>
+            <h3 class="font-medium mb-3">Tin tuyển dụng</h3>
+            <div class="space-y-4">
+                @forelse($company->jobs as $job)
+                    <a href="{{ route('jobs.show', $job) }}" class="block p-4 border rounded hover:shadow">
+                        <h4 class="font-medium">{{ $job->title }}</h4>
+                        <div class="text-sm text-gray-600">{{ $job->location }} • {{ $job->category->name ?? '' }}</div>
+                    </a>
+                @empty
+                    <div class="text-gray-600">Hiện chưa có tin tuyển dụng.</div>
+                @endforelse
+            </div>
+        </section>
+    </div>
+</div>
+</x-app-layout>
+<x-app-layout>
     <section class="company-hero full-bleed">
         <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=80" alt="Không gian làm việc hiện đại">
     </section>
